@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" rel="type/css" href="intprg1odev.css">
+    <title>İnternet Programcılığı Ödev</title>
+</head>
+<body>
+
+    <!--NAVBAR-->
+      
+    <header>
+        <nav>
+          <ul class="ul">
+            <li class="li ben"><a href="haber.html">HİLMİ DEMİRTAŞ</a></li>
+            <li class="li"><a href="#haber.html">YAZARLAR</a></li>
+            <li class="li"><a href="#haber.html">GÜNDEM</a></li>
+            <li class="li"><a href="https://www.sozcu.com.tr/spor/">SON DAKİKA</a></li>
+            <li class="li"><a href="#haber.html">SPOR</a></li>
+            <li class="li"><a href="#haber.html">HAYAT</a></li>
+            <li class="li"><a href="#haber.html">DÜNYA</a></li>
+            <li class="li"><a href="#haber.html">EKONOMİ</a></li>
+            <li class="li"><a href="#haber.html">OTOMOTİV</a></li>
+            <li class="li"><a href="#haber.html">E-ABONELİK</a></li>
+            
+          </ul>
+        </nav>
+      </header>
+
+    <!--NAVBAR-->
+
+    <!--Section (sol-slayt-sağ)-->
+
+    <section class="sec1">
+                 <!--sol-->
+        <article class="art art1">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, dolorem. Exercitationem ad vitae molestiae soluta voluptates illo placeat deleniti a, ab dicta delectus fugiat nemo temporibus, dolorem cumque doloremque minima.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, quisquam. Quos veritatis dolorum consequuntur quia excepturi enim molestias laudantium beatae nihil est non doloremque sunt natus fugiat quas, officiis suscipit?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi tempore, sapiente nobis nemo earum voluptatem dolore magnam nostrum laborum enim, minima corporis inventore. Quae iure odit dolore suscipit ea similique?</p>
+        
+        </article>
+                  <!--sol-->
+
+                  <!--slayt-->
+        <article class="art art2">
+
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="https://picsum.photos/id/27/800/300" style="width:100%">
+                  <div class="text">Ronaldo Yılın Golünü Attı</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="https://picsum.photos/id/36/800/300" style="width:100%">
+                  <div class="text">Dolar Yükseliyor</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="https://picsum.photos/id/57/800/300" style="width:100%">
+                  <div class="text">Ethereum'a Ne Oluyor?</div>
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+                
+                <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                      dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+                </script>
+        </article>
+                   <!--slayt-->
+
+
+             <!--sağ-->
+        <article class="art art1">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, dolorem. Exercitationem ad vitae molestiae soluta voluptates illo placeat deleniti a, ab dicta delectus fugiat nemo temporibus, dolorem cumque doloremque minima.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, quisquam. Quos veritatis dolorum consequuntur quia excepturi enim molestias laudantium beatae nihil est non doloremque sunt natus fugiat quas, officiis suscipit?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi tempore, sapiente nobis nemo earum voluptatem dolore magnam nostrum laborum enim, minima corporis inventore. Quae iure odit dolore suscipit ea similique?</p>
+        </article>
+             <!--sağ-->
+
+
+    </section>
+   
+
+
+    <section>
+        <!-- MAIN (Center website) -->
+<div class="main">
+
+
+
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <div class="column">
+        <div class="content">
+          <img src="https://picsum.photos/id/237/400/150" alt="Mountains" style="width:100%">
+          <h3>My Work</h3>
+          <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="https://picsum.photos/id/237/400/150" alt="Lights" style="width:100%">
+          <h3>My Work</h3>
+          <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="https://picsum.photos/id/237/400/150" alt="Nature" style="width:100%">
+          <h3>My Work</h3>
+          <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="https://picsum.photos/id/237/400/150" alt="Mountains" style="width:100%">
+          <h3>My Work</h3>
+          <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+        </div>
+      </div>
+    <!-- END GRID -->
+    </div>
+
+    <div class="row">
+        <div class="column">
+          <div class="content">
+            <img src="https://picsum.photos/id/237/400/150" alt="Mountains" style="width:100%">
+            <h3>My Work</h3>
+            <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+          <img src="https://picsum.photos/id/237/400/150" alt="Lights" style="width:100%">
+            <h3>My Work</h3>
+            <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+          <img src="https://picsum.photos/id/237/400/150" alt="Nature" style="width:100%">
+            <h3>My Work</h3>
+            <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+          <img src="https://picsum.photos/id/237/400/150" alt="Mountains" style="width:100%">
+            <h3>My Work</h3>
+            <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+          </div>
+        </div>
+      <!-- END GRID -->
+      </div>
+    
+    
+    <!-- END MAIN -->
+    </div>
+    </section>
+
+    <!--Section (sol-slayt-sağ)-->
+
+    <footer>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li style="float:right"><a class="active" href="#about">About</a></li>
+          </ul>
+    </footer>
+       
+</body>
+</html>
